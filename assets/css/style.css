@@ -156,6 +156,8 @@ main {
     height: 90vw;
     /* Makes the square image a circle*/
     border-radius: 50%;
+    max-width: 300px;
+    max-height: 300px;
 
 }
 
@@ -255,10 +257,11 @@ main {
 }
 
 /* Media querie for screens of 1200px and wider*/
-@media screen and (min-width:1200px) {
 
+@media screen and (min-width: 1200px) {    
+    /* Reasons section */
     #benefits {
-        display:flex;
+        display: flex;
         flex-direction: row;
     }
 
@@ -267,7 +270,7 @@ main {
     }
 
     #benefits-image {
-        order: 0;
+        order: 0
     }
 
     #benefits-mental {
@@ -276,11 +279,9 @@ main {
 
     #benefits-mental > div {
         align-self: flex-start;
-
     }
 
     #benefits-physical > div {
         align-self: flex-end;
     }
-
 }
